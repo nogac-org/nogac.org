@@ -1,19 +1,25 @@
 ---
 layout: home
-title: Chromatone
+title: Musetta Stone
 description: Visual Music Language Research Hub
-youtube: qthKClCRIl0
+youtube: RzVvThhjAKw
 date: 2017-01-01
 ---
 
 <a href="/theory/interplay/spectrum/" ><img class="w-full" alt="Chromatic Spectrum" src="/img/spectrum.svg" /></a>
 
-Chromatone is an open source research and design project to explore, develop and implement the scientific way of visual music education, communication and performance.
+The Musetta Stone Foundation is a public benefit corporation dedicated to empowering communities through education, creativity, and career opportunities. We operate professional services to fund our mission: providing a constructive, safe haven for youth and those in need.
 
-Imagine if we once agree on a standard way to interconnect colors and notes? It will empower our music perception with vision, most humans primary sensory channel, especially in our modern screen time. Why not view music the visual way today? Let's explore 12 notes, 12 colors and infinite space of their possible combinations.
+We reinvest our resources directly into the communities we serve, providing vital programs and support systems as a positive alternative to the streets.
 
-We've discovered complete and coherent Visual Music Language there. It's evolving through further merging colors with notes, rhythms with shapes, intervals with gradients, chords and scales with palettes. And we pave the way for new generations of visual music explorers.
+We provide accessible, career-focused training in high-demand creative and technical fields. Our curricula are designed to provide pathways to real-world opportunities.
 
-We're creating the Visual Music [Theory](./theory/index.md) study, that helps beginners learn complex music concepts in color. Interactive web-apps in the [Practice](./practice/index.md) section expand the knowledge and grow deeper music awareness. Those, who want to go beyond personal explorations and get guided educational programs and community learning experience, can request Chromatone [Tutorship](/tutor/). And we are just getting started! Also for those, who want to touch and feel the colorful notes we have a cozy [Sticker Shop](./shop/index.md).
+Our commercial entities provide top-tier professional services while creating internship and career opportunities for our students. Every project you hire us for directly supports our community programs.
+
+We build and maintain our own open-source projects. These tools power our AI development services and are freely available to empower students, developers, and the global community.
+
+We are pioneering the future of emergency services by injecting mental health rapid response directly into the 911 system. Our goal is to de-escalate crises, provide immediate expert care, and build safer communities for everyone.
+
+Our full-circle model is designed to create tangible career outcomes. We train, mentor, and hire from within our own community.
 
 If you have any questions or ideas to share - feel free to [contact us](contacts/index.md) today.

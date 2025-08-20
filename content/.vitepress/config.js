@@ -4,11 +4,11 @@ import { withPwa } from '@vite-pwa/vitepress'
 export default withPwa(defineConfig({
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://chromatone.center'
+    hostname: 'https://musettastone.com'
   },
   outDir: "../dist",
-  title: "Chromatone",
-  titleTemplate: 'Chromatone.center',
+  title: "Musetta Stone",
+  titleTemplate: 'musettastone.com',
   description: "Visual music language",
   lang: "en",
   themeConfig: {

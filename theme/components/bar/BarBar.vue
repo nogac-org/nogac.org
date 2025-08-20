@@ -15,7 +15,7 @@ const { theme } = useData()
 
 const searchOpen = ref()
 const practiceOpen = ref()
-const theoryOpen = ref()
+const learnOpen = ref()
 const settingsOpen = ref()
 const transportOpen = ref()
 const scaleOpen = ref()
@@ -36,12 +36,12 @@ nav.bar
 
 
   button(
-    :inert="theoryOpen"
-    @click="theoryOpen = !theoryOpen"
-    :class="{ active: theoryOpen || route.path.includes('theory') }"
-    title="Theory"
-    aria-label="Toggle theory navigation panel"
-    v-tooltip.right="'Theory'"
+    :inert="learnOpen"
+    @click="learnOpen = !learnOpen"
+    :class="{ active: learnOpen || route.path.includes('learn') }"
+    title="Learn"
+    aria-label="Toggle learn navigation panel"
+    v-tooltip.right="'Learn'"
     )
     .i-la-book
   button(
@@ -128,27 +128,27 @@ nav.bar
   .flex-auto
   .spacer 
 
-  button.rounded-full.scale-80.border-3.h-12.w-12(
-    :inert="scaleOpen"
-    @click="scaleOpen = !scaleOpen"  
-    :class="{ active: scaleOpen }" 
-    aria-label="Toggle synth panel"
-    v-tooltip.right="'Synth settings'"
-    :style="{ borderColor: noteColor(globalScale.tonic) }"
-    ) 
-      .-mt-2px.text-lg {{ notes[globalScale.tonic] }}
+  //- button.rounded-full.scale-80.border-3.h-12.w-12(
+  //-   :inert="scaleOpen"
+  //-   @click="scaleOpen = !scaleOpen"  
+  //-   :class="{ active: scaleOpen }" 
+  //-   aria-label="Toggle synth panel"
+  //-   v-tooltip.right="'Synth settings'"
+  //-   :style="{ borderColor: noteColor(globalScale.tonic) }"
+  //-   ) 
+  //-     .-mt-2px.text-lg {{ notes[globalScale.tonic] }}
 
 
-  button.scale-80.rounded-lg.flex.flex-col.gap-1.border-3.h-12.relative(
-    :inert="transportOpen"
-    @click="transportOpen = !transportOpen"  
-    :class="{ active: transportOpen }" 
-    aria-label="Toggle transport panel"
-    v-tooltip.right="'Transport'"
-    :style="{ borderColor: !tempo.blink ? tempo.color : '' }"
-    ) 
-    .i-mdi-metronome.-mt-6px.mb-4px
-    .absolute.text-xs.-bottom-2px {{ tempo.bpm.toFixed() }}
+  //- button.scale-80.rounded-lg.flex.flex-col.gap-1.border-3.h-12.relative(
+  //-   :inert="transportOpen"
+  //-   @click="transportOpen = !transportOpen"  
+  //-   :class="{ active: transportOpen }" 
+  //-   aria-label="Toggle transport panel"
+  //-   v-tooltip.right="'Transport'"
+  //-   :style="{ borderColor: !tempo.blink ? tempo.color : '' }"
+  //-   ) 
+  //-   .i-mdi-metronome.-mt-6px.mb-4px
+  //-   .absolute.text-xs.-bottom-2px {{ tempo.bpm.toFixed() }}
 
   //- button.scale-80.rounded-lg.flex.flex-col.gap-1.border-3.h-12.relative(
   //-   :inert="pianoOpen"
@@ -160,26 +160,26 @@ nav.bar
   //-   ) 
   //-   .i-mdi-piano
 
-  button(
-    :inert="settingsOpen"
-    @click="settingsOpen = !settingsOpen"  
-    :class="{ active: settingsOpen }" 
-    aria-label="Toggle audio input/output panel"
-    v-tooltip.right="'Audio input/output'"
-    :style="{ color: mic.opened ? 'red' : '' }"
-    )
-    .i-la-microphone
+  //- button(
+  //-   :inert="settingsOpen"
+  //-   @click="settingsOpen = !settingsOpen"  
+  //-   :class="{ active: settingsOpen }" 
+  //-   aria-label="Toggle audio input/output panel"
+  //-   v-tooltip.right="'Audio input/output'"
+  //-   :style="{ color: mic.opened ? 'red' : '' }"
+  //-   )
+  //-   .i-la-microphone
 
-  .spacer
+  //- .spacer
 
 
-  button(
-    @click="drawingEnabled = !drawingEnabled"
-    :class="{ active: drawingEnabled }"
-    v-tooltip.right="'Draw on the screen'"
-    aria-label="Toggle screen drawing"
-    )
-    .i-carbon-pen 
+  //- button(
+  //-   @click="drawingEnabled = !drawingEnabled"
+  //-   :class="{ active: drawingEnabled }"
+  //-   v-tooltip.right="'Draw on the screen'"
+  //-   aria-label="Toggle screen drawing"
+  //-   )
+  //-   .i-carbon-pen 
   state-dark
   full-screen
 
@@ -213,13 +213,13 @@ client-only
   BarPanel(v-model="searchOpen")
     nav-search.m-4(@close="searchOpen = false" :focus="searchOpen")
 
-  BarPanel(v-model="theoryOpen")
+  BarPanel(v-model="learnOpen")
     a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
-      href="/theory/"
+      href="/learn/"
       ) 
       .i-la-book
-      .p-0 Theory
-    BarLevel(path="/theory/" :level="0")
+      .p-0 Learn
+    BarLevel(path="/learn/" :level="0")
 
   BarPanel(v-model="practiceOpen")
     a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(

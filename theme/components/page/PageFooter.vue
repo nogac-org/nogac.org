@@ -10,7 +10,8 @@ const route = useRoute()
 
   a.no-underline.flex.items-center.gap-4(href="/")
     img.w-6(src="https://chromatone.center/media/logo/smooth.svg", alt="Chromatone logo" title="Chromatone")
-    .text-lg.font-bold.mr-2 Chromatone 
+    .text-lg.font-bold.mr-2 Musetta Stone Foundation.
+    .text-sm.mx-2 A Public Benefit Corporation 
   a.no-underline.text-xl.flex.gap-1.items-center(
     v-tooltip="'Follow us on Instagram'"
     href="https://instagram.com/chromatone.center/" target="_blank")

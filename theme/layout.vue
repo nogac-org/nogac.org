@@ -65,9 +65,9 @@ midi-notes(v-if="!params.pure && !params.nokeys")
       .flex-1.p-8.gap-1.flex.flex-col.origin-left(
         style="flex: 1 1 400px"
         )
-        .text-3rem.md-text-4rem.font-bold Chromatone
-        .text-2rem.md-ml-1 Visual Music Language
-        .text-xl.md-ml-1 to learn, explore and communicate with 
+        .text-3rem.md-text-4rem.font-bold Musetta Stone
+        .text-2rem.md-ml-1 More Than Music. A Foundation for the Future
+        .text-xl.md-ml-1 empowering communities through education, creativity, and career opportunities.
       .flex.flex-wrap.items-start.px-4.gap-8
         .flex.flex-wrap.gap-16.items-stretch(
           style="flex: 1 1 280px;"

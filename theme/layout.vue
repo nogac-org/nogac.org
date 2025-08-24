@@ -38,7 +38,7 @@ function close() {
 
 <template lang="pug">
 a.top-16px.left-2.fixed.z-1000.cursor-pointer.mr-3.op-40.hover-op-100.transition(href="/" @click="close()")
-  img.h-30px(src="media/logo/smooth.svg", alt="Chromatone logo")
+  img.h-30px(src="https://raw.githubusercontent.com/nogac-org/nogac.org/dev/content/public/media/logo/smooth.svg", alt="Chromatone logo")
 
 full-screen.op-40.hover-op-80.active-op-100.transition.text-xl.fixed.bottom-2.right-2.z-10000(v-if="params?.pure")
 
@@ -63,7 +63,7 @@ midi-notes(v-if="!params.pure && !params.nokeys")
       //- chroma-flower.flex.justify-center(
       //-   style="flex: 1 1 420px")
       img.flex.justify-center(
-        src="/media/logo/shield.png" 
+        src="https://raw.githubusercontent.com/nogac-org/nogac.org/dev/content/public/media/logo/shield.png" 
         alt="Description"
         style="flex: 1 1 1px")
       .flex-1.p-8.gap-1.flex.flex-col.origin-left(

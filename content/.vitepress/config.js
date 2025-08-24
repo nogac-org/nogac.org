@@ -9,7 +9,7 @@ export default withPwa(defineConfig({
   outDir: "../dist",
   title: "Nation of God and Christ",
   titleTemplate: 'nogac.org',
-  description: "Building a Global Spiritual Nation",
+  description: "Planting a Modern Global Spiritual Stateless Nation",
   lang: "en",
   themeConfig: {
     socialLinks: []

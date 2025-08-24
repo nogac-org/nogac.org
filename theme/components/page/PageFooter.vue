@@ -9,7 +9,7 @@ const route = useRoute()
 .bg-dark-100.bg-op-30.dark-bg-dark-800.p-4.md-p-8.w-full.flex.dark-text-light-900.pb-6.items-center.gap-2.flex-wrap
 
   a.no-underline.flex.items-center.gap-4(href="/")
-    img.w-6(src="https://raw.githubusercontent.com/nogac-org/nogac.org/dev/content/public/media/logo/logo.png", alt="Chromatone logo" title="Chromatone")
+    img.w-6(src="https://raw.githubusercontent.com/nogac-org/nogac.org/main/content/public/media/logo/logo.png", alt="NOGAC logo" title="NOGAC")
     .text-lg.font-bold.mr-2 Nation of God and Christ
     //- .text-sm.mx-2 A 501(c)(3) approved entity  
   a.no-underline.text-xl.flex.gap-1.items-center(
@@ -24,21 +24,21 @@ const route = useRoute()
   .flex-1 
   a.no-underline.flex.items-center(
     v-tooltip="'Edit page on GitHub'"
-    :href="`https://github.com/chromatone/chromatone.center/tree/master/content${route.path}`" target="_blank")
+    :href="`https://github.com/nogac-org/nogac.org/tree/main/content${route.path}`" target="_blank")
     .i-la-edit
   a.no-underline.flex.items-center(
     v-tooltip="'Report an issue'"
-    :href="`https://github.com/chromatone/chromatone.center/issues/new?title=${route.data?.title}&body=Issue at ${route.path}`" target="_blank") 
+    :href="`https://github.com/nogac-org/nogac.org/issues/new?title=${route.data?.title}&body=Issue at ${route.path}`" target="_blank") 
     .i-la-exclamation-circle
   .text-sm.mx-2 MIT © 2017-Present 
 
   a.no-underline.flex.gap-1.items-center(
-    v-tooltip="'Chromatone releases on GitHub'"
-    href="https://github.com/chromatone/chromatone.center/releases" target="_blank") 
+    v-tooltip="'NOGAC releases on GitHub'"
+    href="https://github.com/nogac-org/nogac.org/releases" target="_blank") 
     .text-sm v.{{ version }}
   a.no-underline.text-xl.flex.gap-1.items-center(
-    v-tooltip="'Chromatone GitHub organisation'"
-    href="https://github.com/chromatone/" target="_blank") 
+    v-tooltip="'NOGAC GitHub organisation'"
+    href="https://github.com/nogac-org/" target="_blank") 
     .i-la-github
   //- a.no-underline.flex.gap-1.items-center(
   //-   v-tooltip="'Chromatone NPM package'"

@@ -1,11 +1,11 @@
 {
-	"name": "use-chromatone",
-	"description": "Visual music language theory and practice toolbox",
+	"name": "nogac",
+	"description": "Planting a Modern Global Spiritual Stateless Nation",
 	"version": "3.0.3",
-	"homepage": "https://chromatone.center",
+	"homepage": "https://nogac.org",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chromatone/chromatone.center.git"
+		"url": "https://github.com/nogac-org/nogac.org.git"
 	},
 	"keywords": [
 		"vue",

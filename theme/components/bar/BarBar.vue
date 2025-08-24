@@ -32,7 +32,7 @@ nav.bar
     v-tooltip.right="'Chromatone'"
     aria-label="Back to main page"
     )
-    img.cursor-pointer.mt-3.mb-2.w-10(src="https://raw.githubusercontent.com/nogac-org/nogac.org/dev/content/public/media/logo/logo.png", alt="Chromatone logo" title="Chromatone")
+    img.cursor-pointer.mt-3.mb-2.w-10(src="https://raw.githubusercontent.com/nogac-org/nogac.org/main/content/public/media/logo/logo.png", alt="NOGAC logo" title="Chromatone")
 
 
   button(

@@ -32,7 +32,7 @@ nav.bar
     v-tooltip.right="'Chromatone'"
     aria-label="Back to main page"
     )
-    img.cursor-pointer.mt-3.mb-2.w-10(src="https://chromatone.center/media/logo/smooth.svg", alt="Chromatone logo" title="Chromatone")
+    img.cursor-pointer.mt-3.mb-2.w-10(src="media/logo/logo.png", alt="Chromatone logo" title="Chromatone")
 
 
   button(

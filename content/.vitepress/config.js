@@ -4,12 +4,12 @@ import { withPwa } from '@vite-pwa/vitepress'
 export default withPwa(defineConfig({
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://musettastone.com'
+    hostname: 'https://nogac.org'
   },
   outDir: "../dist",
-  title: "Musetta Stone",
-  titleTemplate: 'musettastone.com',
-  description: "Visual music language",
+  title: "Nation of God and Christ",
+  titleTemplate: 'nogac.org',
+  description: "Building a Global Spiritual Nation",
   lang: "en",
   themeConfig: {
     socialLinks: []

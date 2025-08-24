@@ -38,7 +38,7 @@ function close() {
 
 <template lang="pug">
 a.top-16px.left-2.fixed.z-1000.cursor-pointer.mr-3.op-40.hover-op-100.transition(href="/" @click="close()")
-  img.h-30px(src="https://chromatone.center/media/logo/smooth.svg", alt="Chromatone logo")
+  img.h-30px(src="media/logo/smooth.svg", alt="Chromatone logo")
 
 full-screen.op-40.hover-op-80.active-op-100.transition.text-xl.fixed.bottom-2.right-2.z-10000(v-if="params?.pure")
 
@@ -60,14 +60,28 @@ midi-notes(v-if="!params.pure && !params.nokeys")
   template(v-else-if="f.layout == 'home'")
     main.home.items-center.justify-center.overflow-clip(aria-labelledby="main-title")
 
-      chroma-flower.flex.justify-center(
-        style="flex: 1 1 420px")
+      //- chroma-flower.flex.justify-center(
+      //-   style="flex: 1 1 420px")
+      img.flex.justify-center(
+        src="/media/logo/shield.png" 
+        alt="Description"
+        style="flex: 1 1 1px")
       .flex-1.p-8.gap-1.flex.flex-col.origin-left(
         style="flex: 1 1 400px"
         )
-        .text-3rem.md-text-4rem.font-bold Musetta Stone
-        .text-2rem.md-ml-1 More Than Music. A Foundation for the Future
-        .text-xl.md-ml-1 empowering communities through education, creativity, and career opportunities.
+        .text-3rem.md-text-4rem.font-bold Nation of God and Christ
+        .text-2rem.md-ml-1 Planting a Modern Global Spiritual Stateless Nation
+        .text-xl.md-ml-1 We foster global ecumenical spiritual unity, create Kingdom Leaders, and build
+        .text-xl.md-ml-1 sustainable communities united in faith and purpose, where everyone has the
+        .text-xl.md-ml-1 opportunity to thrive via a strategic holistic global-sustainability mission for 
+        .text-xl.md-ml-1 the Common Good of all. 
+        .text-sm.md-ml-1 &nbsp;
+        .text-md.md-ml-1 There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female:
+        .text-md.md-ml-1 for ye are all one in Christ Jesus.
+        .text-sm.md-ml-1 ~ Galatians 3:28 KJV
+        .text-sm.md-ml-1 &nbsp;
+        .text-md.md-ml-1  For as the body without the spirit is dead, so faith without works is dead also
+        .text-sm.md-ml-1 ~ James 2:26 KJV
       .flex.flex-wrap.items-start.px-4.gap-8
         .flex.flex-wrap.gap-16.items-stretch(
           style="flex: 1 1 280px;"

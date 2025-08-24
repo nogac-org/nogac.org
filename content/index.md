@@ -1,25 +1,23 @@
 ---
 layout: home
-title: Musetta Stone
-description: Visual Music Language Research Hub
+title: Nation of God and Christ
+description: Building a Modern Global Spiritual Borderless Nation
 youtube: RzVvThhjAKw
 date: 2017-01-01
 ---
 
-<a href="/theory/interplay/spectrum/" ><img class="w-full" alt="Chromatic Spectrum" src="/img/spectrum.svg" /></a>
+<a href="/theory/interplay/spectrum/" ><img class="w-full" alt="Chromatic Spectrum" src="/img/fire_cross.jpg" /></a>
 
-The Musetta Stone Foundation is a public benefit corporation dedicated to empowering communities through education, creativity, and career opportunities. We operate professional services to fund our mission: providing a constructive, safe haven for youth and those in need.
+The Nation of God and Christ (Nogac) is more than your typical church organization; it's a movement aimed at holistic development. We are committed to expanding our reach and influence through a multi-faceted organizational structure that encompasses both non-profit and for-profit entities to serve our communities effectively.
 
-We reinvest our resources directly into the communities we serve, providing vital programs and support systems as a positive alternative to the streets.
+Our vision is a global network of self-sustaining villages, united in faith and purpose, where every individual has the opportunity to thrive spiritually, physically, and economically.
 
-We provide accessible, career-focused training in high-demand creative and technical fields. Our curricula are designed to provide pathways to real-world opportunities.
+NOGAC uses Seven Pillars of Holistic Health as our framework for building balanced, healthy, and spiritually fulfilled lives and communities.
 
-Our commercial entities provide top-tier professional services while creating internship and career opportunities for our students. Every project you hire us for directly supports our community programs.
+Our organizational structure is a unique, integrated structure designed to maximize our impact while maintaining our spiritual focus and non-profit status.
 
-We build and maintain our own open-source projects. These tools power our AI development services and are freely available to empower students, developers, and the global community.
+NOGAC employs a Village Concept designed for building self-sustaining communities owned and governed by the Church Community, built from the ground up to support holistic health and spiritual growth.
 
-We are pioneering the future of emergency services by injecting mental health rapid response directly into the 911 system. Our goal is to de-escalate crises, provide immediate expert care, and build safer communities for everyone.
-
-Our full-circle model is designed to create tangible career outcomes. We train, mentor, and hire from within our own community.
+Our flagship village, Redemption Village, will be situated on 36.5 acres in eastern Arizona on land pledged by the founders and serves as the blueprint for our global vision. It integrates all seven pillars into a cohesive strategy for community development using a Global-Sustainability Systems and Key Initiatives and Specialized programs to educate our leaders and care for our communities.
 
 If you have any questions or ideas to share - feel free to [contact us](contacts/index.md) today.

@@ -2,7 +2,7 @@
 title: Contacts
 description: The project and its author
 date: 2021-01-01
-cover: javier-balseiro.jpg
+cover: contacts.jpg
 org:
   avatar: /media/logo/smooth.svg
   name: Chromatone center

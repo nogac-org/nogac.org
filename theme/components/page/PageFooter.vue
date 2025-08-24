@@ -9,9 +9,9 @@ const route = useRoute()
 .bg-dark-100.bg-op-30.dark-bg-dark-800.p-4.md-p-8.w-full.flex.dark-text-light-900.pb-6.items-center.gap-2.flex-wrap
 
   a.no-underline.flex.items-center.gap-4(href="/")
-    img.w-6(src="https://chromatone.center/media/logo/smooth.svg", alt="Chromatone logo" title="Chromatone")
-    .text-lg.font-bold.mr-2 Musetta Stone Foundation.
-    .text-sm.mx-2 A Public Benefit Corporation 
+    img.w-6(src="media/logo/logo.png", alt="Chromatone logo" title="Chromatone")
+    .text-lg.font-bold.mr-2 Nation of God and Christ
+    //- .text-sm.mx-2 A 501(c)(3) approved entity  
   a.no-underline.text-xl.flex.gap-1.items-center(
     v-tooltip="'Follow us on Instagram'"
     href="https://instagram.com/chromatone.center/" target="_blank")

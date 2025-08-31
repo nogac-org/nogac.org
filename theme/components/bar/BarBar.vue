@@ -13,15 +13,16 @@ import BarPanel from "./BarPanel.vue";
 const route = useRoute()
 const { theme } = useData()
 
+const aboutOpen = ref()
+const administrationOpen = ref()
+const ministryOpen = ref()
+const serveOpen = ref()
+
 const searchOpen = ref()
-const practiceOpen = ref()
-const learnOpen = ref()
-const settingsOpen = ref()
-const transportOpen = ref()
-const scaleOpen = ref()
-
-const instrument = ref('guitar')
-
+const connectOpen = ref()
+const joinOpen = ref()
+const causesOpen = ref()
+const villageOpen = ref()
 
 </script>
 
@@ -29,31 +30,48 @@ const instrument = ref('guitar')
 nav.bar
   a(
     href="/"
-    v-tooltip.right="'Chromatone'"
+    v-tooltip.right="'Nation of God and Christ'"
     aria-label="Back to main page"
     )
-    img.cursor-pointer.mt-3.mb-2.w-10(src="https://raw.githubusercontent.com/nogac-org/nogac.org/main/content/public/media/logo/logo.png", alt="NOGAC logo" title="Chromatone")
-
+    img.cursor-pointer.mt-3.mb-2.w-10(src="https://raw.githubusercontent.com/nogac-org/nogac.org/main/content/public/media/logo/logo.png", alt="NOGAC logo" title="NOGAC")
 
   button(
-    :inert="learnOpen"
-    @click="learnOpen = !learnOpen"
-    :class="{ active: learnOpen || route.path.includes('learn') }"
-    title="Learn"
-    aria-label="Toggle learn navigation panel"
-    v-tooltip.right="'Learn'"
+    :inert="aboutOpen"
+    @click="aboutOpen = !aboutOpen"
+    :class="{ active: aboutOpen || route.path.includes('a.about') }"
+    title="About"
+    aria-label="Toggle about navigation panel"
+    v-tooltip.right="'About'"
     )
-    .i-la-book
+    .i-la-users
   button(
-    :inert="practiceOpen"
-    @click="practiceOpen = !practiceOpen"
-    :class="{ active: practiceOpen || route.path.includes('practice') }"
-    title="Practice"
-    aria-label="Toggle practice navigation panel"
-    v-tooltip.right="'Practice'"
+    :inert="administrationOpen"
+    @click="administrationOpen = !administrationOpen"
+    :class="{ active: administrationOpen || route.path.includes('b.administration') }"
+    title="Administration"
+    aria-label="Toggle administration navigation panel"
+    v-tooltip.right="'Administration'"
     )
-    .i-la-hand-point-up
-
+    .i-la-church
+  button(
+    :inert="ministryOpen"
+    @click="ministryOpen = !ministryOpen"
+    :class="{ active: ministryOpen || route.path.includes('c.ministries') }"
+    title="Ministries"
+    aria-label="Toggle ministries navigation panel"
+    v-tooltip.right="'Ministries'"
+    )
+    .i-la-seedling
+  button(
+    :inert="serveOpen"
+    @click="serveOpen = !serveOpen"
+    :class="{ active: serveOpen || route.path.includes('d.serve') }"
+    title="How We Serve"
+    aria-label="Toggle serve navigation panel"
+    v-tooltip.right="'How We Serve'"
+    )
+    .i-la-hand-holding-heart
+  
   .spacer
 
   button(
@@ -68,166 +86,122 @@ nav.bar
 
   .spacer
 
-  a.button(
-    title="Shop"
-    href="/shop/"
-    :class="{ active: route.path.includes('shop') }"
-    v-tooltip.right="'Shop'"
-    aria-label="Shop"
+  button(
+    :inert="joinOpen"
+    @click="joinOpen = !joinOpen"
+    :class="{ active: joinOpen || route.path.includes('e.join') }"
+    title="Serve With Us"
+    aria-label="Toggle join navigation panel"
+    v-tooltip.right="'Serve With Us'"
     )
-    .i-la-shopping-bag
+    .i-la-door-open
 
-  a.button(
-
-    title="tutor"
-    href="/tutor/"
-    :class="{ active: route.path.includes('tutor') }"
-    v-tooltip.right="'Tutorship'"
-    aria-label="Tutorship"
+  button(
+    :inert="villageOpen"
+    @click="villageOpen = !villageOpen"
+    :class="{ active: villageOpen || route.path.includes('f.villages') }"
+    title="It Takes a Village"
+    aria-label="Toggle village navigation panel"
+    v-tooltip.right="'It Takes a Village'"
     )
-    .i-la-chalkboard-teacher
+    .i-la-people-carry
 
-  a.button(
-    title="Projects"
-    href="/projects/"
-    :class="{ active: route.path.includes('projects') }"
-    v-tooltip.right="'Projects'"
-    aria-label="Projects"
+  button(
+    :inert="causesOpen"
+    @click="causesOpen = !causesOpen"
+    :class="{ active: causesOpen || route.path.includes('g.causes') }"
+    title="Our Initiatives"
+    aria-label="Toggle initiatives navigation panel"
+    v-tooltip.right="'Our Initiatives'"
     )
-    .transition.scale-100.hover-op-100.op-70.i-la-layer-group
+    .i-la-leaf
 
-  //- a.button(
-    title="Academy"
-    href="/academy/"
-    :class="{ active: route.path.includes('academy') }"
-    v-tooltip.right="'Academy'"
-    aria-label="Academy"
+  button(
+    :inert="connectOpen"
+    @click="connectOpen = !connectOpen"
+    :class="{ active: connectOpen || route.path.includes('h.connect') }"
+    title="Connect"
+    aria-label="Toggle connect navigation panel"
+    v-tooltip.right="'Connect'"
     )
-    .scale-85.i-mdi-pillar
-
-  //-  a.button(
-    title="School"
-    href="/school/"
-    :class="{ active: route.path.includes('school') }"
-    v-tooltip.right="'School'"
-    aria-label="Visual Music School"
-    )
-    .scale-85.i-bxs-school
-
-  //-  a.button(
-    title="Contacts"
-    href="/contacts/"
-    :class="{ active: route.path.includes('contacts') }"
-    v-tooltip.right="'Contacts'"
-    aria-label="Contacts"
-    )
-    .i-la-at
-
-
+    .i-la-hands-helping
 
   .flex-auto
   .spacer 
 
-  //- button.rounded-full.scale-80.border-3.h-12.w-12(
-  //-   :inert="scaleOpen"
-  //-   @click="scaleOpen = !scaleOpen"  
-  //-   :class="{ active: scaleOpen }" 
-  //-   aria-label="Toggle synth panel"
-  //-   v-tooltip.right="'Synth settings'"
-  //-   :style="{ borderColor: noteColor(globalScale.tonic) }"
-  //-   ) 
-  //-     .-mt-2px.text-lg {{ notes[globalScale.tonic] }}
-
-
-  //- button.scale-80.rounded-lg.flex.flex-col.gap-1.border-3.h-12.relative(
-  //-   :inert="transportOpen"
-  //-   @click="transportOpen = !transportOpen"  
-  //-   :class="{ active: transportOpen }" 
-  //-   aria-label="Toggle transport panel"
-  //-   v-tooltip.right="'Transport'"
-  //-   :style="{ borderColor: !tempo.blink ? tempo.color : '' }"
-  //-   ) 
-  //-   .i-mdi-metronome.-mt-6px.mb-4px
-  //-   .absolute.text-xs.-bottom-2px {{ tempo.bpm.toFixed() }}
-
-  //- button.scale-80.rounded-lg.flex.flex-col.gap-1.border-3.h-12.relative(
-  //-   :inert="pianoOpen"
-  //-   @click="pianoOpen = !pianoOpen"  
-  //-   :class="{ active: pianoOpen }" 
-  //-   aria-label="Toggle synth panel"
-  //-   v-tooltip.right="'Synth settings'"
-  //-   :style="{ borderColor: midi.note.velocity > 0 ? noteColor(midi.note.pitch, 4, midi.note.velocity) : 'currentColor' }"
-  //-   ) 
-  //-   .i-mdi-piano
-
-  //- button(
-  //-   :inert="settingsOpen"
-  //-   @click="settingsOpen = !settingsOpen"  
-  //-   :class="{ active: settingsOpen }" 
-  //-   aria-label="Toggle audio input/output panel"
-  //-   v-tooltip.right="'Audio input/output'"
-  //-   :style="{ color: mic.opened ? 'red' : '' }"
-  //-   )
-  //-   .i-la-microphone
-
-  //- .spacer
-
-
-  //- button(
-  //-   @click="drawingEnabled = !drawingEnabled"
-  //-   :class="{ active: drawingEnabled }"
-  //-   v-tooltip.right="'Draw on the screen'"
-  //-   aria-label="Toggle screen drawing"
-  //-   )
-  //-   .i-carbon-pen 
+  
   state-dark
   full-screen
 
 
 client-only
 
-  BarPanel(v-model="scaleOpen")
-    synth-font.sticky.top-0.z-100
-    .flex.gap-2 
-      button.text-button(@click="midi.offset--")
-        .i-la-minus
-      .text-button {{ midi.offset }}
-      button.text-button(@click="midi.offset++")
-        .i-la-plus
-    control-scale.w-full
-    chord-tabs-neck.max-h-80dvh(
-      :instrument="instrument"
-      )
-    .is-group.flex.gap-1.p-2.mb-8
-      button.text-button(:class="{ active: instrument == 'guitar' }" @click="instrument = 'guitar'") Guitar
-      button.text-button(:class="{ active: instrument == 'ukulele' }" @click="instrument = 'ukulele'") Ukulele
-
-
-  BarPanel(v-model="transportOpen")
-    state-transport
-    midi-panel
-
-  BarPanel(v-model="settingsOpen")
-    state-sound
-
   BarPanel(v-model="searchOpen")
     nav-search.m-4(@close="searchOpen = false" :focus="searchOpen")
 
-  BarPanel(v-model="learnOpen")
+  BarPanel(v-model="aboutOpen")
     a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
-      href="/learn/"
+      href="/a.about/"
       ) 
-      .i-la-book
-      .p-0 Learn
-    BarLevel(path="/learn/" :level="0")
+      .i-la-users
+      .p-0 About
+    BarLevel(path="/a.about/" :level="0")
 
-  BarPanel(v-model="practiceOpen")
+  BarPanel(v-model="administrationOpen")
     a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
-      href="/practice/"
+      href="/b.administration/"
       ) 
-      .i-la-hand-point-up
-      .p-0 Practice
-    BarLevel(path="/practice/" :level="0" @close="practiceOpen = false")
+      .i-la-church
+      .p-0 Administration
+    BarLevel(path="/b.administration/" :level="0" @close="administrationOpen = false")
+
+  BarPanel(v-model="ministryOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/c.ministries/"
+      ) 
+      .i-la-hand-holding-heart
+      .p-0 Ministries
+    BarLevel(path="/c.ministries/" :level="0" @close="ministryOpen = false")
+
+  BarPanel(v-model="serveOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/d.serve/"
+      ) 
+      .i-la-hand-holding-heart
+      .p-0 How We Serve
+    BarLevel(path="/d.serve/" :level="0" @close="serveOpen = false")
+
+  BarPanel(v-model="joinOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/e.join/"
+      ) 
+      .i-la-door-open
+      .p-0 Serve wtih Us
+    BarLevel(path="/e.join/" :level="0" @close="joinOpen = false")
+
+  BarPanel(v-model="villageOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/f.villages/"
+      ) 
+      .i-la-leaf
+      .p-0 It Takes a Village
+    BarLevel(path="/f.villages/" :level="0" @close="villageOpen = false")
+
+  BarPanel(v-model="causesOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/g.causes/"
+      ) 
+      .i-la-leaf
+      .p-0 Our Initiatives
+    BarLevel(path="/g.causes/" :level="0" @close="causesOpen = false")
+
+  BarPanel(v-model="connectOpen")
+    a.text-2xl.p-2.m-2.block.font-bold.flex.gap-2.items-center(
+      href="/h.connect/"
+      ) 
+      .i-la-hands-helping
+      .p-0 Connect
+    BarLevel(path="/h.connect/" :level="0" @close="connectOpen = false")  
 </template>
 
 <style lang="postcss" scoped>

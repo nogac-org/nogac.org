@@ -16,7 +16,7 @@ const { pages, children } = usePages(route, data)
     href="/"
     )
     img.w-8(src="/media/logo/click-logo.svg")
-    .p-2 Chromatone
+    .p-2 NOGAC
   a.link.no-underline.transition-all.duration-300.justify-center(
     v-for="page in pages['/']"
     :key= "page.url"

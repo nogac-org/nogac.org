@@ -26,15 +26,14 @@ const children = useChildren({ path: props.item.url }, data)
     .flex.items-center.gap-2.mb-4(
       )
       .text-3xl.mt-1(style="flex: 0 1 30px") 
-        .i-la-book(v-if="item?.frontmatter?.title == 'About'")
-        .i-la-hand-point-up(v-if="item?.frontmatter?.title == 'Administration'")
-        .i-la-chalkboard-teacher(v-if="item?.frontmatter?.title == 'How We Serve'")
-        .i-la-chalkboard-teacher(v-if="item?.frontmatter?.title == 'Ministries'")
-        .i-la-shopping-bag(v-if="item?.frontmatter?.title == 'Holistic Approach'")
-        .i-la-star(v-if="item?.frontmatter?.title == 'Support'")
-        .i-la-at(v-if="item?.frontmatter?.title == 'Contacts'")
-        .i-la-chalkboard-teacher(v-if="item?.frontmatter?.title == 'It Takes A Village'")
-        //- .i-bxs-school(v-if="item?.frontmatter?.title == 'School'")
+        .i-la-users(v-if="item?.frontmatter?.title == 'About'")
+        .i-la-church(v-if="item?.frontmatter?.title == 'Administration'")
+        .i-la-seedling(v-if="item?.frontmatter?.title == 'Ministries'")
+        .i-la-hand-holding-heart(v-if="item?.frontmatter?.title == 'How We Serve'")
+        .i-la-door-open(v-if="item?.frontmatter?.title == 'Serve With Us'")
+        .i-la-people-carry(v-if="item?.frontmatter?.title == 'It Takes A Village'")
+        .i-la-leaf(v-if="item?.frontmatter?.title == 'Our Initiatives'")
+        .i-la-hands-helping(v-if="item?.frontmatter?.title == 'Connect'")
       .text-3xl.font-bold.underline.underline-4(
         :style="{ textDecorationColor: lchToHsl(i, total) }"
       ) {{ item?.frontmatter?.title }}

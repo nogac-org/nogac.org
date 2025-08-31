@@ -70,11 +70,10 @@ midi-notes(v-if="!params.pure && !params.nokeys")
         style="flex: 1 1 400px"
         )
         .text-3rem.md-text-4rem.font-bold Nation of God and Christ
-        .text-2rem.md-ml-1 Planting a Modern Global Spiritual Stateless Nation
+        .text-2rem.md-ml-1 Planting a Modern Global Spiritual Holistic Nation
         .text-xl.md-ml-1 We foster global ecumenical spiritual unity, create Kingdom Leaders, and build
         .text-xl.md-ml-1 sustainable communities united in faith and purpose, where everyone has the
-        .text-xl.md-ml-1 opportunity to thrive via a strategic holistic global-sustainability mission for 
-        .text-xl.md-ml-1 the Common Good of all. 
+        .text-xl.md-ml-1 opportunity to thrive via a global strategic mission for the Common Good of all.
         .text-sm.md-ml-1 &nbsp;
         .text-md.md-ml-1 There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female:
         .text-md.md-ml-1 for ye are all one in Christ Jesus.

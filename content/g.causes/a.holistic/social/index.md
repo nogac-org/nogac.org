@@ -1,6 +1,6 @@
 ---
 title: Social
 description: Brief description of this section
-cover: manuel-nageli.jpg
+cover: social.jpg
 date: 2021-01-01
 ---

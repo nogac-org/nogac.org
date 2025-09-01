@@ -1,6 +1,6 @@
 ---
 title: Physical
 description: Brief description of this section
-cover: manuel-nageli.jpg
+cover: physical.jpg
 date: 2021-01-01
 ---
